@@ -1,35 +1,26 @@
 [multisite]
-20.193.243.30
-20.198.81.214
-#52.140.114.179
-#20.198.112.124
-#20.204.75.23
-#13.71.49.129
-#13.71.49.138
-#13.71.55.104
-
+20.40.50.195
 [multisite:vars]
 ansible_user='{{ ssh_user }}'
 ansible_ssh_private_key_file=~/.ssh/id_rsa_bhashini
 
-doc_root=/var/www/bhashini.gov.in/public
+doc_root=/var/www/test/public
 site_id=prod
-deploy_env_domain=bhashini.gov.in
-
+deploy_env_domain=test-site.centralindia.cloudapp.azure.com
 server_runs_as=www-data
 server_runs_as_group=www-data
 
 run_composer=false
 
-joomla_sitename="Bhashini"
-joomla_fromname="Bhashini"
-joomla_live_site="https://www.bhashini.gov.in"
+joomla_sitename="test"
+joomla_fromname="test"
+joomla_live_site="https://test-site.centralindia.cloudapp.azure.com"
 joomla_secret="CRkQXB9Q3nqUH6vDqqy1paj3tdYpIf6N"
 joomla_robots="Index, Follow"
-joomla_log_path="/var/www/bhashini.gov.in/public/administrator/logs"
-joomla_tmp_path="/var/www/bhashini.gov.in/public/tmp"
+joomla_log_path="/var/www/test-site.centralindia.cloudapp.azure.com/public/administrator/logs"
+joomla_tmp_path="/var/www/test-site.centralindia.cloudapp.azure.com/public/tmp"
 joomla_force_ssl="2"
 joomla_behind_loadbalancer="1"
 
-joomlatools_pages_config_file_suffix="prod"
-htaccess_file_suffix="prod"
+joomlatools_pages_config_file_suffix="test"
+htaccess_file_suffix="test"
