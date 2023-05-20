@@ -1,0 +1,57 @@
+.wpu-logo{
+    z-index: 1;
+    img{ 
+        width:150px;
+        @media screen and (min-width:768px){
+            width:250px;
+        }
+        transition: width 1s;
+    }
+}
+.wpu__white_glow{
+    background-size: cover;
+}
+.wpu-main-header{
+    height: 65px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    &.sticky-topp{
+        .wpu-logo{
+            img{
+                width:175px;
+            }
+        } 
+    }
+}
+
+@media screen and (min-width:767px){
+    .wpu-main-header{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.wpu-mainmenu{
+    .dj-pos-absolute{
+        &.dj-align-right{
+            .dj-accordion-light{
+                right: -15px;
+                border: 1px solid #ccc;
+                @media screen and (min-width:767px){
+                    right: -30px;
+                }                
+            }
+        }
+        .dj-accordion-light{
+            .dj-accordion-in{
+                width: calc(100vw - 2px);
+            }
+        }
+    }
+}
+
+.no-scroll{
+    overflow-y: hidden;
+}

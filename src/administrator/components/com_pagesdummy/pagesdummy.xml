@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>com_pagesdummy</name>
+	<creationDate>30th June 2021</creationDate>
+	<copyright>Copyright (C) 2009 - 2021 Techjoomla. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<author>Techjoomla</author>
+	<authorEmail>extensions@techjoomla.com</authorEmail>
+	<authorUrl>https://techjoomla.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Pages Dummy</description>
+	<install />
+	<update />
+	<administration>
+		<files folder="admin" />
+		<languages />
+	</administration>
+	<files folder="site">
+		<filename>pagesdummy.php</filename>
+		<folder>view</folder>
+	</files>
+	<languages />
+	<media />
+	<config />
+</extension>

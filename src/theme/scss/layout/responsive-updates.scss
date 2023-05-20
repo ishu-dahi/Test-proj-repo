@@ -1,0 +1,461 @@
+@media screen and (max-width: 1920px) {
+    body {
+         
+        &.ml {
+            .nav-pills li a {
+                font-size: 13px; 
+            } 
+        }    
+        &.ta { 
+            .nav-pills li a {
+                font-size: 13px; 
+            }
+            .cloud-text {
+                font-size: 29px;
+            }
+        }
+        &.te {
+            .nav-pills li a {
+                font-size: 14px; 
+            }
+        }
+    }
+} 
+
+
+
+
+@media screen and (max-width: 1499px) {
+
+}
+
+
+
+
+@media screen and (max-width: 1199px) {
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+}
+
+
+
+
+@media screen and (max-width: 991px) {
+    header {
+        .nav-pills {
+            li {
+                a {
+                    margin: 15px 10px 5px 5px;    
+                }
+            }
+        }
+    } 
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .hamburger-menu {
+        @include flexbox();
+    }
+    header {
+        .nav {
+            visibility: hidden;
+            @include opacity(0);
+            @include flex-direction(column,vertical);
+            position: fixed;
+            left: 0;
+            top: 0;
+            background: #f3f3f3 none repeat scroll 0 0;
+            height: 100%;
+            z-index: 999;
+            width: 320px;
+            max-width: 70%;
+        }
+        .nav-pills {
+            li {
+                margin: 0;
+                a {
+                    margin: 0 !important;
+                    padding: 15px;
+                    border: none;
+                }
+                &.active {
+                    a {
+                        &:after {
+                            bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        .pages-bhashadaan-btn {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: auto;
+            padding-left: 0px;
+        }
+        .navbar-collapse {
+            padding: 10px 15px;
+            min-height: 63px;
+            .container {
+                @include flexbox();
+            }
+        }
+    } 
+    .banner-slide-text {
+        margin-top: 20px !important;
+        padding: 0 30px 40px 30px;
+    }
+    .ecosystem-page .models>div {
+        width: 100%;
+    }
+}
+  
+
+
+/* Language Specific CSS Begin */
+@media screen and (max-width: 1499px) {
+    .home-banner { 
+        .banner-slide-text  {
+            .lead {
+                display: none; 
+            }
+            blockquote {
+                font-size: 40px;
+                line-height: 1.2;
+                margin: 0;
+            }
+        }
+        
+    }    
+}
+@media screen and (max-width: 1199px) {
+    .home-banner { 
+        .banner-slide-text  { 
+            blockquote {
+                font-size: 32px; 
+            }
+        }
+        
+    } 
+    .bottom-links .color-cols .col-xs-12 {
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(flex-start);
+        @include flex-direction(column, horizontal);
+        text-align: center;
+        max-height: none;
+        img {
+            margin-right: 0px;
+            width: 100%;
+            max-width: 96px;
+            margin-bottom: 20px;
+            min-width: 96px;
+            min-height: 96px; 
+        }
+        .text-blue {
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .ecosystem-page .models>div {
+        width: calc(100% / 3);
+    }
+}
+@media screen and (max-width: 991px) {
+    .ecosystem-page .models>div { 
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .home-banner { 
+        .banner-slide-text  {
+            margin-top: 30px;
+            blockquote {
+                font-size: 25px; 
+            }
+        } 
+    } 
+    .ecosystem-page {
+        .bg-primary-shade1 {
+            .block-heading {
+                font-size: 30px;
+                line-height: 1.2;
+            }
+            .py-10 {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+body {
+    &.en {
+        
+        @media screen and (max-width: 991px) {
+            
+        }
+    }
+    &.as {
+        @media screen and (max-width: 1499px) {
+            .home-banner { 
+                .banner-slide-text  { 
+                    blockquote {
+                        font-size: 35px;  
+                    }
+                } 
+            }  
+        }
+    }
+    &.bn{
+
+    }
+    &.gu {
+
+    }
+    &.hi {
+ 
+    }
+    &.kn {
+        @media screen and (max-width: 1499px) {
+            .home-banner { 
+                .banner-slide-text  { 
+                    blockquote { 
+                        font-size: 35px; 
+                        line-height: 1.5;  
+                    }
+                } 
+            }  
+        }
+        @media screen and (max-width: 1199px) {
+            .home-banner { 
+                .banner-slide-text  { 
+                    blockquote {
+                        font-size: 28px; 
+                        line-height: 1.5; 
+                    }
+                } 
+            }  
+        }
+        @media screen and (max-width: 1024px) {
+            .home-banner { 
+                .banner-slide-text  { 
+                    blockquote {
+                        font-size: 20px; 
+                        line-height: 1.5;  
+                    }
+                } 
+            }  
+        }
+    }
+    &.ml {
+        @media screen and (max-width: 1499px) {
+            .home-banner { 
+                .banner-slide-text  { 
+                    blockquote {
+                        font-size: 35px; 
+                        line-height: 1.5; 
+                    }
+                } 
+            }  
+        }
+        @media screen and (max-width: 1199px) {
+            .home-banner { 
+                .banner-slide-text  { 
+                    blockquote {
+                        font-size: 28px; 
+                        line-height: 1.5; 
+                    }
+                } 
+            }  
+        }
+        @media screen and (max-width: 1199px) {
+            .home-banner { 
+                .banner-slide-text  { 
+                    blockquote {
+                        font-size: 20px; 
+                        line-height: 1.5; 
+                    }
+                } 
+            } 
+            .ecosystem-page {
+                .bg-primary-shade1 {
+                    .block-heading {
+                        font-size: 30px;
+                        line-height: 1 !important;
+                    }
+                    .py-10 {
+                        font-size: 16px;
+                        line-height: 1.5;
+                    }
+                }
+            } 
+        } 
+        
+    }
+    &.mr {
+        @media screen and (max-width: 1199px) {
+            home-banner { 
+                .banner-slide-text  { 
+                    blockquote {
+                        font-size: 30px; 
+                        line-height: 1.5; 
+                    }
+                } 
+            }  
+        }
+    }
+    &.od {
+        @media screen and (max-width: 1499px) {
+            .home-banner { 
+                .banner-slide-text  { 
+                    blockquote {
+                        font-size: 35px; 
+                        line-height: 1.5; 
+                    }
+                } 
+            }  
+        }
+        @media screen and (max-width: 1199px) {
+            .home-banner { 
+                .banner-slide-text  { 
+                    blockquote {
+                        font-size: 28px; 
+                        line-height: 1.5; 
+                    }
+                } 
+            }  
+        }
+        @media screen and (max-width: 1024px) {
+            .home-banner { 
+                .banner-slide-text  { 
+                    blockquote {
+                        font-size: 20px; 
+                        line-height: 1.5; 
+                    }
+                } 
+            }  
+        }
+    }
+    &.pa {
+        @media screen and (max-width: 1499px) {
+            .home-banner { 
+                .banner-slide-text  { 
+                    blockquote {
+                        font-size: 35px; 
+                        line-height: 1.5; 
+                    }
+                } 
+            }  
+        }
+        @media screen and (max-width: 1199px) {
+            .home-banner { 
+                .banner-slide-text  { 
+                    blockquote {
+                        font-size: 28px; 
+                        line-height: 1.5; 
+                    }
+                } 
+            }  
+        }
+        @media screen and (max-width: 1024px) {
+            .home-banner { 
+                .banner-slide-text  { 
+                    blockquote {
+                        font-size: 20px;  
+                        line-height: 1.5; 
+                    }
+                } 
+            }  
+        }
+    }
+    &.ta {
+        @media screen and (max-width: 1499px) {
+            .home-banner { 
+                .banner-slide-text  { 
+                    blockquote {
+                        font-size: 30px; 
+                        line-height: 1.5;  
+                    }
+                } 
+            }  
+        }
+        @media screen and (max-width: 1199px) {
+            .home-banner { 
+                .banner-slide-text  { 
+                    blockquote {
+                        font-size: 25px; 
+                        line-height: 1.5; 
+                    }
+                } 
+            }  
+        }
+        @media screen and (max-width: 1024px) {
+            .home-banner { 
+                .banner-slide-text  { 
+                    blockquote {
+                        font-size: 18px; 
+                        line-height: 1.5; 
+                    }
+                } 
+            }  
+        }
+    }
+    &.te {
+        @media screen and (max-width: 1499px) {
+            .home-banner { 
+                .banner-slide-text  { 
+                    blockquote {
+                        font-size: 35px; 
+                        line-height: 1.5; 
+                    }
+                } 
+            }  
+        }
+        @media screen and (max-width: 1199px) {
+            .home-banner { 
+                .banner-slide-text  { 
+                    blockquote {
+                        font-size: 28px; 
+                        line-height: 1.5; 
+                    }
+                } 
+            }  
+        }
+        @media screen and (max-width: 1024px) {
+            .home-banner { 
+                .banner-slide-text  {  
+                    blockquote {
+                        font-size: 20px;  
+                        line-height: 1.5; 
+                    }
+                } 
+            }  
+        }
+    }
+}
+
+
+.test-responsive {
+    font-size: 14px;
+}
+
+body {
+    &.as, &.ml, &.te, &.ta, &.pa, &.ml {
+        .cloud-text {
+            font-size: 24px !important; 
+            line-height: 1.5 !important;  
+        }
+    } 
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="plugin" version="3.7.0" group="fields" method="upgrade">
+	<name>plg_fields_tjtextareajson</name>
+	<author>Techjoomla</author>
+	<authorEmail>extensions@techjoomla.com</authorEmail>
+	<authorUrl>https://techjoomla.com</authorUrl>
+	<copyright>(C)Techjoomla. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<creationDate>28 April 2021</creationDate>
+	<version>1.0.0</version>
+	<description>PLG_FIELDS_TJTEXTAREAJSON_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="tjtextareajson">tjtextareajson.php</filename>
+		<folder>params</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_fields_tjtextareajson.ini</language>
+		<language tag="en-GB">en-GB.plg_fields_tjtextareajson.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="rows"
+					type="number"
+					label="PLG_FIELDS_TJTEXTAREAJSON_PARAMS_ROWS_LABEL"
+					description="PLG_FIELDS_TJTEXTAREAJSON_PARAMS_ROWS_DESC"
+					default="10"
+					filter="integer"
+					size="5"
+				/>
+
+				<field
+					name="cols"
+					type="number"
+					label="PLG_FIELDS_TJTEXTAREAJSON_PARAMS_COLS_LABEL"
+					description="PLG_FIELDS_TJTEXTAREAJSON_PARAMS_COLS_DESC"
+					default="10"
+					filter="integer"
+					size="5"
+				/>
+
+				<field
+					name="maxlength"
+					type="number"
+					label="PLG_FIELDS_TJTEXTAREAJSON_PARAMS_MAXLENGTH_LABEL"
+					description="PLG_FIELDS_TJTEXTAREAJSON_PARAMS_MAXLENGTH_DESC"
+					filter="integer"
+				/>
+
+				<field
+					name="filter"
+					type="list"
+					label="PLG_FIELDS_TJTEXTAREAJSON_PARAMS_FILTER_LABEL"
+					description="PLG_FIELDS_TJTEXTAREAJSON_PARAMS_FILTER_DESC"
+					class="btn-group"
+					default="JComponentHelper::filterText"
+					validate="options"
+					>
+					<option value="0">JNO</option>
+					<option value="raw">JLIB_FILTER_PARAMS_RAW</option>
+					<option value="safehtml">JLIB_FILTER_PARAMS_SAFEHTML</option>
+					<option value="JComponentHelper::filterText">JLIB_FILTER_PARAMS_TEXT</option>
+					<option value="alnum">JLIB_FILTER_PARAMS_ALNUM</option>
+					<option value="integer">JLIB_FILTER_PARAMS_INTEGER</option>
+					<option value="float">JLIB_FILTER_PARAMS_FLOAT</option>
+					<option value="tel">JLIB_FILTER_PARAMS_TEL</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

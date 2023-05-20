@@ -1,0 +1,103 @@
+.btn{
+    border-radius: 2px;
+}
+.btn-wpu-primary{
+    background-color: $colorred1;
+    width: max-content;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    padding: 10px 14px;
+    color: $colorwhite1;
+    @media screen and (min-width:768px){
+        padding: 14px 20px;
+    } 
+    &:hover{
+        color: $colorwhite3;
+        background-color: $colorred2;
+    }
+    &.--normal{
+        padding: 6px 20px !important;
+    }
+    &:visited, &:focus{
+        color: $colorwhite1;
+    }
+}
+
+.btn-wpu-redborder{
+    border: 1px solid $colorred3;
+}
+.btn-wpu-secondary{
+    width: max-content;
+    padding: 10px 14px;
+    background-color: $colorwhite1;
+    color: $colorred3;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;  
+    @media screen and (min-width:768px){
+        padding: 14px 20px;
+    }  
+    &:hover{
+        background-color: $colorred4;
+        color: $colorred3;
+    }
+    &.--normal{
+        padding: 6px 20px !important;
+    }
+    &.--normal2{
+        padding: 9px 20px !important;
+    }
+    &:visited, &:focus{
+        color: $colorred3;
+    }
+}
+
+.btn-wpu-dates{
+    border-radius: 1px;
+    background-color: $color-blue3;
+    width: max-content;
+    padding: 4px 10px;
+    margin: 0;
+    letter-spacing: 0;
+    text-align: center;
+    color: $colorwhite1;
+    &:hover{
+        color: $colorwhite1;
+    }
+}
+
+.btn-wpu-smdates{
+    padding: 4px 10px;
+}
+
+.btn-w-60{
+    min-width: 60px;
+}
+.btn-w-70{
+    min-width: 70px;
+}
+.btn-w-135{    
+    min-width: 110px;
+    @media screen and (min-width:768px){
+        min-width: 135px;
+    }
+}
+.btn-w-150{
+    min-width: 110px;
+    @media screen and (min-width:768px){
+        min-width: 150px;
+    }
+}
+.btn-w-160{
+    min-width: 110px;
+    @media screen and (min-width:768px){
+        min-width: 160px;
+    }
+}
+.btn-w-190{
+    min-width: 110px;
+    @media screen and (min-width:768px){
+        min-width: 190px;
+    }
+}

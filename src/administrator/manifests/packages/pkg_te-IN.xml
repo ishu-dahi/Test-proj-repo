@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.9" method="upgrade">
+	<name>Telugu (te-IN) Language Pack</name>
+	<packagename>te-IN</packagename>
+	<version>1.0</version>
+	<creationDate>2021-06-28</creationDate>
+	<author>Deepak Patil</author>
+	<authorEmail>deepak_p@tekditechnologies.com</authorEmail>
+	<authorUrl></authorUrl>
+    <copyright>Copyright (C) 2005 - 2019 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<url></url>
+	<packager></packager>
+	<packagerurl></packagerurl>
+	<description>Telugu (India) Language Package for Joomla! 3.9.27v1</description>
+	<blockChildUninstall>true</blockChildUninstall>
+	<files>
+		<file type="language" client="administrator" id="te-IN">admin_te-IN.zip</file>
+		<file type="language" client="site" id="te-IN">site_te-IN.zip</file>
+	</files>
+	<updateservers>
+		<server type="collection" priority="1" name="Accredited Joomla! Translations">https://update.joomla.org/language/translationlist_3.xml</server>
+	</updateservers>
+</extension>

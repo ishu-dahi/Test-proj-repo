@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metafile version="3.9" client="site">
+	<tag>kn-IN</tag>
+	<name>Kannada (India)</name>
+	<description>kn-IN administrator language</description>
+	<version>1.0</version>
+	<creationDate>2021-06-28</creationDate>
+	<author>Deepak Patil</author>
+	<authorEmail>deepak_p@tekditechnologies.com</authorEmail>
+	<authorUrl></authorUrl>
+	<copyright>Copyright (C) 2005 - 2019 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<metadata>
+		<name>Kannada (India)</name>
+		<nativeName>ಕನ್ನಡ</nativeName>
+		<tag>kn-IN</tag>
+		<rtl>0</rtl>
+		<locale>kn_IN.utf8, kn_IN.UTF-8, kn_IN, kan_IN, kn, kannadiga, kannada-in, in, ind, india, indian, bharat, bharat, barath, barat</locale>
+		<firstDay>0</firstDay>
+		<weekEnd>0,6</weekEnd>
+		<calendar>gregorian</calendar>
+	</metadata>
+	<params />
+</metafile>

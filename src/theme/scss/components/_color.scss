@@ -1,0 +1,212 @@
+// Font Color Classes
+.blue-200{
+    color: $color-blue2;
+}
+
+.red-100{
+    color:$colorred1;
+}
+.red-200{
+    color:$colorred2;
+}
+.red-300{
+    color:$colorred3;
+}
+.red-400{
+    color:$colorred4;
+}
+
+.white-100{
+    color: $colorwhite1;
+}
+.white-200{
+    color: $colorwhite2;
+}
+.white-300{
+    color: $colorwhite3;
+}
+.white-400{
+    color: $colorwhite4;
+}
+.white-500{
+    color: $colorwhite5;
+}
+
+.black-100{
+    color: $color-black1;
+}
+.black-200{
+    color: $color-black2;
+}
+.black-300{
+    color: $color-black3;
+}
+.bluebg-0-9{
+    background-color:#323a71f2;
+}
+.yellow-100{
+    color: $color-yellow1;
+}
+.gray-200{
+    color:#444444;
+}
+.dark-blue{
+    background-color:#202658;
+}
+.redbg-100{
+    background-color: $colorred1;
+}
+.bluebg-100{
+    background-color: $color-blue2;
+    .wpu__titlesm{
+        color: $colorwhite1;
+    }
+}
+
+.bluebg-200{
+    background: linear-gradient(180deg, #313970 0%, #092056 100%);    
+    .wpu__titlesm{
+        color: $colorwhite1;
+    }
+}
+
+.offwhitebg{
+    background-color: $colorwhite4;
+    .wpu__titlesm{
+        color: $color-blue2;
+    }
+}
+.whitebg{
+    background-color: $colorwhite1;
+    .wpu__titlesm{
+        color: $color-blue2;
+    }
+}
+.whitebg-200{
+    background-color: $colorwhite2;
+}
+.whitebgop1-200{
+    background-color: rgba(161,172,218,0.1);;
+}
+
+.blackshade-100{
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%);
+}
+.blackshade-300{
+    background: linear-gradient(90deg, #000000 0%, rgba(0,0,0,0) 100%);
+}
+
+.boxshadow-100{
+    box-shadow: 0 10px 40px 0 rgba(0,0,0,0.2);
+}
+
+.op-7{
+    opacity: 0.7;
+}
+
+.fw-20{
+    font-weight: 200 !important;
+}
+.fw-30{
+    font-weight: 300 !important;
+}
+.fw-40{
+    font-weight: 400 !important;
+}
+.fw-50{
+    font-weight: 500 !important;
+}
+.fw-60{
+    font-weight: 600 !important;
+}
+.fw-70{
+    font-weight: 700 !important;
+}
+.fw-80{
+    font-weight: 800 !important;
+}
+.fs-12{
+    font-size: 12px;
+}
+.fs-13{
+    font-size: 13px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-24{
+    font-size: 24px;
+}
+
+.lh-14{
+    line-height: 14px;
+}
+.lh-15{
+    line-height: 15px;
+}
+.lh-16{
+    line-height: 16px;
+}
+.lh-17{
+    line-height: 17px;
+}
+.lh-18{
+    line-height: 18px;
+}
+.lh-19{
+    line-height: 19px;
+}
+.lh-20{
+    line-height: 20px;
+}
+.lh-21{
+    line-height: 21px;
+}
+.lh-22{
+    line-height: 22px;
+}
+.lh-23{
+    line-height: 23px;
+}
+.lh-24{
+    line-height: 24px;
+}
+.lh-29{
+    line-height: 29px;
+}
+.whitelink-100{
+    color: $colorwhite1;
+    &:hover{
+        color: $colorwhite1;
+    }
+    &:visited, &:focus{
+        color: #e0dada;
+    }
+}
+.bluelink-200{
+    color: $color-blue2;
+    &:hover{
+        color: $color-blue2;
+    }
+}
+.yellowlink-100{
+    color: $color-yellow1;
+    &:hover{
+        color: $colorwhite1;
+    }
+}
+.yellow-100{
+    color: $color-yellow1;
+}
+.gray-9{
+    color:#999999;
+}

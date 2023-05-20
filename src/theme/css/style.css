@@ -1,0 +1,251 @@
+.show-xs-down{
+	display: none !important;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.max-width-100{max-width:100%;}
+
+@media (max-width: 575px){
+	.px-xs-0 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.tm-bg {
+		background: none !important;
+	}
+	.tm-xs-bg {
+		background: url(../../images/timline-1.png) no-repeat left 290px;
+		background-size: contain;
+		transform: rotateZ(90deg);
+		height: 20px;
+	}
+	.roadmap-list {
+		padding-left: 37% !important;
+	}
+	.about-banner {
+		height: 100vh;
+		background-position: 100% 100% !important;
+		background-size: 175% !important;
+		background-color: #DEECFF !important;
+	}
+	.hidden-lg.timeline-xs {
+		display: inline-block;
+		position: absolute;
+		left: 15px;
+		top: 8%;
+	}
+	.about-roadmap.tm-bg ul {
+		margin: 0 0 0 0;
+		padding: 0;
+		font-size: 12px;
+	}
+/*
+	.roadmap-list .block-title {
+		margin-top: -40px;
+	}
+*/
+	.color-cols .roadmap-list img {
+		margin-left: -25%;
+    }
+	.show-xs-down {
+		display: block !important;
+	}
+	.xs-ml-25{
+		margin-left:25px;
+	}
+	.mod-languages .inputbox{
+	    border: 0 !important;
+		background: none;
+	}
+	.small{
+		font-size: 70% !important;
+	}
+	.xs-px-15{
+	  padding-left:15px;
+	  padding-right:15px;
+	}
+	.xs-px-25{
+	  padding-left:25px;
+	  padding-right:25px;
+	}
+	.banner-slide-text{
+		margin-top:20px !important;
+		padding-bottom:40px;
+	}
+	.home-banner .banner-slide-text blockquote{
+		font-size: 30px !important;
+		line-height: 32px !important;
+	}
+   .home-banner .banner-slide-text h3{
+		font-size: 18px !important;
+	}
+	.heading-h2{
+		 font-size: 20px !important;
+         line-height: 26px !important;
+	}
+	.block-heading{
+		 font-size: 32px !important;
+         line-height: 32px !important;
+	}
+	.second-col{
+		margin-bottom: 0px !important;
+		padding-left: 0px !important;
+		margin-left: 15px !important;
+	}
+	.first-col,
+	.third-col{
+		margin-bottom: 0px !important;
+	}
+	.mt-80{
+		margin-top:40px !important;
+	}
+	.bottom-links .color-cols .col-xs-12{
+	   padding:25px !important;
+	}
+	.circle-white-icon img{
+		width:50px !important;
+	}
+	.bottom-links .color-cols .col-xs-12 .mt-20{
+		margin-top:5px !important;
+	}
+	.text-xs-left{
+		text-align:left !important;
+	}
+	.footer-links {
+		margin-top: 0px !important;
+		margin-left: 0px !important;		text-align: left !important;
+	}
+	.footer-links a{
+	    padding-left: 0px !important;
+		display: block !important;
+		margin-bottom: 15px;
+	}
+	.mb-xs-40{
+		margin-bottom:40px;
+	}
+	.sociallinks{
+		position: relative;
+		height: 100px;
+	}
+	.sociallinks .custom{
+		position: absolute;
+		bottom: 0;
+		right: 15px;
+	}
+	.color-cols img {
+    height: 50px;
+	}
+	.copy-right-terms-menu{
+		padding-bottom: 0px !important;
+	}
+	
+	.copy-right-terms-menu .menu a{
+		padding-left: 0px;
+		padding-right: 10px;
+		display: block;
+		margin-bottom: 7px;
+		margin-top: 7px;
+	}
+	.xs-flex-wrap{
+		flex-flow: wrap;
+	}
+}
+
+.footer-links .menu{
+	margin-top:10px;
+}
+
+.py-6{
+	padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.px-15 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.color-cols img{
+    margin-right: 15px;
+}
+
+.section-api .models div.col-sm-4:first-child > .dataset-orange {
+	border: 1px solid #ffb200;
+}
+.section-api .models div.col-sm-4:nth-child(2) > .dataset-orange {
+	border: 1px solid #E29F72;
+	box-shadow: 0px 1.81944px 1.81944px rgba(0, 0, 0, 0.25);
+}
+.section-api .models div.col-sm-4:nth-child(3) > .dataset-orange {
+	border: 1px solid #7E8AB8;
+	box-shadow: 0px 1.81944px 1.81944px rgba(0, 0, 0, 0.25);
+}
+.section-api .models div.col-sm-4:first-child > .api-buttons .bh-btn-orange {
+	background: #FFBF00;
+	border: 1px solid #FFBF00;
+}
+.section-api .models div.col-sm-4:nth-child(3) > .api-buttons .bh-btn-orange {
+	background: #16337B;
+	border: 1px solid #16337B;
+}
+
+/* Article Body color */
+.bd-article-content {
+    color: #000;
+}
+html:lang(bn) .h4,
+html:lang(bn) .h3,
+html:lang(bn) .h2,
+html:lang(bn) .h1,
+html:lang(gu) .h4,
+html:lang(gu) .h3,
+html:lang(gu) .h2,
+html:lang(gu) .h1,
+html:lang(hi) .h4,
+html:lang(hi) .h3,
+html:lang(hi) .h2,
+html:lang(hi) .h1,
+html:lang(kn) .h4,
+html:lang(kn) .h3,
+html:lang(kn) .h2,
+html:lang(kn) .h1,
+html:lang(ml) .h4,
+html:lang(ml) .h3,
+html:lang(ml) .h2,
+html:lang(ml) .h1,
+html:lang(mr) .h4,
+html:lang(mr) .h3,
+html:lang(mr) .h2,
+html:lang(mr) .h1,
+html:lang(od) .h4,
+html:lang(od) .h3,
+html:lang(od) .h2,
+html:lang(od) .h1,
+html:lang(pa) .h4,
+html:lang(pa) .h3,
+html:lang(pa) .h2,
+html:lang(pa) .h1,
+html:lang(ta) .h4,
+html:lang(ta) .h3,
+html:lang(ta) .h2,
+html:lang(ta) .h1,
+html:lang(te) .h4,
+html:lang(te) .h3,
+html:lang(te) .h2,
+html:lang(te) .h1 {
+	line-height: 48px !important;
+}
+html:lang(bn) body,
+html:lang(gu) body,
+html:lang(hi) body,
+html:lang(kn) body,
+html:lang(ml) body,
+html:lang(mr) body,
+html:lang(od) body,
+html:lang(pa) body,
+html:lang(ta) body,
+html:lang(te) body {
+    font-family: 'Baloo 2', cursive !important;
+}

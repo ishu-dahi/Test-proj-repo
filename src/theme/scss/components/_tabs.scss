@@ -1,0 +1,184 @@
+/* Button style Tabs */
+.wpu--buttonstyletabs{   
+    .nav.nav-tabs.wpu--tabs__links{
+        border-bottom:0;
+        display: flex;
+        overflow-x: auto;
+        li{
+            margin-bottom: 0;
+            a{
+                background-color: transparent !important;
+                padding: 16px 45px;
+                font-weight: 500 !important;
+                font-size: 16px !important;
+                white-space: nowrap;
+                color:#999999 !important;
+                &:hover,
+                &:focus{
+                    background-color: #dd4145 !important;
+                    color: #fff !important;
+                }
+            }
+            &.active{
+                a{
+                    background-color: #dd4145 !important;
+                    color: #fff !important;
+                    font-weight: 600 !important;
+                }
+            }
+        }
+    }
+    .wpu--tab-content{
+        padding: 40px;
+        background-color: #fff;
+    }    
+}
+
+
+.wpu--simpletabs{   
+    .nav.nav-tabs.wpu--tabs__links{
+        border-bottom:0;
+        display: flex;
+        overflow-x: auto;
+        width: 100%;
+        li{
+            margin: 0 20px 15px 0;
+            position: relative;
+            width: auto;
+            // width: calc(25% - 40px);
+            // min-width: 100px;
+            &:last-child{
+                margin: 0 0 15px 0;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                width: 25px;
+                height: 4px;
+                background: transparent;
+            }
+            a{
+                border: 0 !important;
+                white-space: nowrap;
+                background-color: transparent !important;
+                padding: 0px;
+                font-size: 16px !important;
+                color: #999999 !important;
+                &:hover,
+                &:focus{
+                    color: #0E2866 !important;
+                    background-color: transparent !important;                    
+                }                
+            }
+            &:hover,
+            &:focus{
+                &:after{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                    width: 25px;
+                    height: 4px;
+                    background: #0E2866 !important;
+                } 
+            }
+            &.active{
+                &:after{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                    width: 25px;
+                    height: 4px;
+                    background: #0E2866;
+                }
+                a{  
+                    color: #0E2866 !important;
+                    font-weight: 600 !important;   
+                    background-color: transparent  !important;                 
+                }
+            }
+        }
+    }
+    .wpu--tab-content{
+        padding-top: 10px;
+        background-color: transparent;
+        margin-top: 10px;
+    }
+    &.contain-inbutton{
+        .tab-content{
+            padding: 10px 0 40px;
+        }
+    }
+    &.tabs__innovate{
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width:769px){
+            flex-direction: row;
+        }
+        .nav-tabs{           
+            position: relative;            
+            @media screen and (min-width:769px){
+                flex-direction: column;
+                width: 220px !important;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 3px;
+                    height: 100%;
+                    background-color: rgba(0,0,0,0.15);
+                    right: 0;
+                    top: 0;
+                }
+            }
+            
+            &.wpu--tabs__links{
+                li{
+                    position: relative;                    
+                    @media screen and (min-width:769px){
+                        margin: 0 !important;
+                        padding: 0 10px;
+                        &.active, &:hover{
+                            background-color: rgba(161,172,218,0.1);
+                            &::after{
+                                position: absolute;
+                                width: 4px !important;
+                                height: 100% !important;
+                                left: unset !important;
+                                top: 0;
+                                right: 0;
+                            }
+                            a{
+                                font-weight: normal !important;
+                            }
+                        }
+                                                        
+                    }
+                    a{
+                        @media screen and (min-width:769px){
+                            white-space: normal !important;                        
+                            word-wrap: break-word;
+                            padding: 10px 0;
+                        }                    
+                    }
+                     &:last-child{                        
+                        @media screen and (min-width:769px){
+                        margin: 0 0 10px 0 !important;
+                        }
+                    }
+                }
+            }      
+        }
+        .tab-content{           
+            @media screen and (min-width:769px){
+                padding-left: 40px;
+                width: calc(100% - 220px);
+            }
+        }
+    }
+}
+.tabsw--450{
+    width: 451px;
+}

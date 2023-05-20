@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metafile version="3.9" client="site">
+	<tag>gu-IN</tag>
+	<name>Gujarati (India)</name>
+	<description>gu-IN administrator language</description>
+	<version>1.0</version>
+	<creationDate>2021-06-28</creationDate>
+	<author>Deepak Patil</author>
+	<authorEmail>deepak_p@tekditechnologies.com</authorEmail>
+	<authorUrl></authorUrl>
+	<copyright>Copyright (C) 2005 - 2019 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<metadata>
+		<name>Gujarati (India)</name>
+		<nativeName>ગુજરાતી</nativeName>
+		<tag>gu-IN</tag>
+		<rtl>0</rtl>
+		<locale>gu_IN.utf8, gu_IN.UTF-8, gu_IN, Gujarati, Gujarati-in, in, ind, india, indian, bharat, bharat, barath, barat</locale>
+		<firstDay>0</firstDay>
+		<weekEnd>0,6</weekEnd>
+		<calendar>gregorian</calendar>
+	</metadata>
+	<params />
+</metafile>

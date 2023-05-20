@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.9" client="administrator" type="language" method="upgrade">
+	<name>Telugu (India)</name>
+    <tag>te-IN</tag>
+	<version>1.0</version>
+	<creationDate>2021-06-28</creationDate>
+	<author>Deepak Patil</author>
+	<authorEmail>deepak_p@tekditechnologies.com</authorEmail>
+	<authorUrl></authorUrl>
+	<copyright>Copyright (C) 2005 - 2019 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description>te-IN administrator language</description>
+	<files>
+		<filename file="meta">install.xml</filename>
+		<filename file="meta">te-IN.xml</filename>
+	</files>
+	<params />
+</extension>

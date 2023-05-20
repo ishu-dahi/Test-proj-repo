@@ -1,0 +1,125 @@
+.wpu-articles-content{
+    margin-top: 0;
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px){
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+.wpu-full-image{
+    .wpu-article-header{
+        color: #fff;
+        padding: 30px 20px;
+        float: left;
+        width: 100%;
+        @media screen and (min-width: 768px){
+            padding: 100px 50px;
+        }
+    }
+}
+
+.wpu-article-body{
+    .mx-100{
+        margin-left: 30px;
+        margin-right: 30px;
+        @media screen and (min-width: 768px){
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+    }
+    font-size: 16px;
+    line-height: 26px;
+    p{
+        margin: 0 0 20px;
+    }
+    h3,h4,h5,h6{
+        color: #313970;
+        font-weight: 600;
+        margin-bottom: 30px;
+        margin-top: 30px; 
+    }
+    .wpu-red-bullets{
+        li{
+            position: relative;
+            padding-left: 20px;
+            padding-bottom: 10px;
+            &:before{
+                content: ". ";
+                color: #CD354D;
+                font-weight: bold;
+                font-size: 30px;
+                position: absolute;
+                top: -8px;
+                left: 0;
+            }
+        }
+    }
+    .wpu-blue-bullets{
+        li{ 
+            position: relative;
+            padding-left: 20px;
+            padding-bottom: 10px;
+            &:before{
+                content: ". ";
+                color: #313970;
+                font-weight: bold;
+                font-size: 30px;
+                position: absolute;
+                top: -8px;
+                left: 0;
+            }
+            &:last-child{
+                padding-bottom: 0px;
+            }
+        }
+    }
+}
+
+.red-quote-text{
+    color:$colorred1;
+}
+.profile-image{
+    width: 65px;
+    border-radius: 5px;
+}
+.social-link-img{
+    width:24px;
+    height: 24px;
+}
+.wpu-artcile-social-links{
+    position: relative;
+    ul{
+        li{
+            list-style: none;
+            display: inline-block;
+            margin-left: 20px;
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.wpu-staff-details-left{
+    padding-left: 45px;
+    padding-right:45px;
+    @media screen and (min-width: 768px){
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.wpu-full-image .col-xs-12 > img{
+    max-width: 100%;
+} 
+
+.wpu-article-info > h1{
+    color: #313970;
+}
+
+.wpb_map_wraper{
+    iframe{
+        width:100% !important;
+    }
+}

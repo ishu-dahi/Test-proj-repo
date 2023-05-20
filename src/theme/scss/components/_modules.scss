@@ -1,0 +1,28 @@
+.wpu-module{
+    .wpu-module__header{
+        h3{
+            color: #fff;
+        }
+    }
+    &.menu-vertical-list{
+        ul{
+            li{
+                a{
+                    color: #fff;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    display: block;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
+.dj-offcanvas-anim .dj-offcanvas{
+    background-color: #fff;
+}
+
+.dj-offcanvas-light .dj-offcanvas-top{
+    background: #fff !important;
+}

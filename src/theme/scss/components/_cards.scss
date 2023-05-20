@@ -1,0 +1,83 @@
+@media screen and (min-width: 768px){
+    .wpu__cards{
+        &.--three{
+            width: calc(33.33% - 20px);
+        }
+        &.--two{
+            width: calc(50% - 20px);
+        }
+        &.--four{
+            width: calc(25% - 20px);
+           &:first-child{
+            //    margin-bottom: 20px;
+           }
+        }
+    }
+}
+
+.wpu__shadow-cardsCont{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wpu__shadow-cards {
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 80px 0 rgba(160,160,160,0.2);
+    width: 100%;
+    @media screen and (min-width: 576px){
+        &.--three{
+            width: calc(50% - 20px);
+        }
+        &.--two{
+            width: calc(50% - 20px);
+        }
+        &.--four{
+            width: calc(33.33% - 20px);
+        }
+    }
+    @media screen and (min-width: 769px){
+        &.--three{
+            width: calc(33.33% - 20px);
+        }
+        &.--two{
+            width: calc(50% - 20px);
+        }
+        &.--four{
+            width: calc(25% - 20px);
+        }
+    }
+    .txt-cont {
+        padding: 30px;
+    }
+}
+
+.wpu__shadow-cardsStart{
+    justify-content: flex-start;
+    .wpu__cards{
+        margin: 10px;
+        min-width: 200px;
+        @media screen and (min-width:680px){
+            &:nth-child(2n+1){
+                margin: 10px 10px 10px 0;
+            }
+        }
+        @media screen and (min-width:576px){
+            &:nth-child(2n+1){
+                margin: 10px;
+            }
+            &:nth-child(3n+1){
+                margin: 10px 10px 10px 0;
+            }
+        }
+        @media screen and (min-width:992px){
+            &:nth-child(3n+1){
+                margin: 10px;
+            }
+            &:nth-child(4n+1){
+                margin: 10px 10px 10px 0;
+            }
+        }
+    }
+}

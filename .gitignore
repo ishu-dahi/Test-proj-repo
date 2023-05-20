@@ -1,0 +1,34 @@
+# Ignore config files
+/src/.htaccess
+/src/.htpasswd
+/src/configuration.php
+/src/joomlatools-pages/config.php
+
+# Media Folders
+#/src/images/*
+
+# Standard Joomla folders
+/src/administrator/cache/*
+/src/administrator/log/*
+/src/administrator/logs/*
+/src/administrator/tmp/*
+/src/cache/*
+/src/log/*
+/src/logs/*
+/src/tmp/*
+
+# Joomlatools Pages Site Folders
+/src/joomlatools-pages/cache/*
+
+# Node Modules Excludes
+*/node_modules/*
+src/theme/automation/node_modules/*
+
+# Ignore symlinks
+
+# Other extensions
+/src/administrator/components/com_akeeba/backup/*
+
+# VSCode
+/.vscode/launch.json
+/src/.vscode/launch.json

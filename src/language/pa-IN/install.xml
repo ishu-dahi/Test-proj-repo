@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.9" client="site" type="language" method="upgrade">
+	<name>Punjabi (India)</name>
+    <tag>pa-IN</tag>
+	<version>1.0</version>
+	<creationDate>2021-06-28</creationDate>
+	<author>Deepak Patil</author>
+	<authorEmail>deepak_p@tekditechnologies.com</authorEmail>
+	<authorUrl></authorUrl>
+	<copyright>Copyright (C) 2005 - 2019 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description>pa-IN site language</description>
+	<files>
+		<filename file="meta">install.xml</filename>
+		<filename file="meta">pa-IN.xml</filename>
+	</files>
+	<params />
+</extension>

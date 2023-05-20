@@ -1,0 +1,9 @@
+artifact_filename: bhashini.tar.gz
+
+joomla_offset: "Asia/Kolkata"
+joomla_mailonline: "0"
+joomla_MetaDesc: "Bhashini will enable Indians to access all content and services in their own language. Bhashini aims to build a National Public Digital Platform for languages to develop services and products for citizens by leveraging the power of artificial intelligence and other emerging technologies."
+joomla_MetaKeys: ""
+joomla_sef_rewrite: "1"
+joomla_lifetime: "30"
+joomla_session_handler: "none"

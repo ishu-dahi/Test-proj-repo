@@ -1,0 +1,109 @@
+- name: Create Joomla's configuration.php
+  template:
+    src: "roles/joomla/templates/configuration.php.j2"
+    dest: "{{ doc_root }}/configuration.php"
+    owner: "{{ server_runs_as }}"
+    group: "{{ server_runs_as_group }}"
+
+# - name: Create .htversion file
+#   file:
+#     path: "{{ doc_root }}/.htversion"
+#     state: touch
+#     owner: "{{ server_runs_as }}"
+#     group: "{{ server_runs_as_group }}"
+
+# - name: Write commit number .htversion to file
+#   shell: echo "{{ lookup('env','BUILD_NUMBER') }}" > {{ doc_root }}/.htversion
+
+# - name: Take backup of db before deployment
+#   shell: "php {{doc_root}}/cli/akeeba-backup.php --profile=2"
+
+# - name: Delete directories
+#   file:
+#     path: "{{ item.dest }}"
+#     state: absent
+#   with_items:
+#   # - {dest: '{{ doc_root }}/components'}
+#   # - {dest: '{{ doc_root }}/libraries'}
+#   # - {dest: '{{ doc_root }}/modules'}
+#   # - {dest: '{{ doc_root }}/plugins'}
+#   # - {dest: '{{ doc_root }}/language'}
+#   # - {dest: '{{ doc_root }}/cli'}
+#   # - {dest: '{{ doc_root }}/includes'}
+#     - {dest: '{{ doc_root }}/layouts'}
+#     - {dest: '{{ doc_root }}/templates'}
+#   # - {dest: '{{ doc_root }}/scripts'}
+#   # - {dest: '{{ doc_root }}/vendor'}
+#     - {dest: '{{ doc_root }}/composer.json'}
+#     - {dest: '{{ doc_root }}/composer.lock'}
+
+- name: Create required directories
+  file:
+    path: "{{ item.dest }}"
+    mode: "{{ item.mode }}"
+    state: directory
+    owner: "{{server_runs_as}}"
+    group: "{{server_runs_as_group}}"
+  with_items:
+  - {dest: '{{ doc_root }}/administrator', mode: '0755'}
+  - {dest: '{{ doc_root }}/administrator/cache', mode: '0755'}
+  - {dest: '{{ doc_root }}/cache', mode: '0755'}
+  - {dest: '{{ doc_root }}/images', mode: '0755'}
+  - {dest: '{{ doc_root }}/logs', mode: '0755'}
+  - {dest: '{{ doc_root }}/tmp', mode: '0755'}
+  - {dest: '{{ doc_root }}/joomlatools-pages/cache', mode: '0755'}
+
+- name: create empty index.html files
+  file: path="{{ doc_root }}/{{ item }}/index.html" state=touch owner="{{server_runs_as}}" group="{{server_runs_as_group}}"
+  with_items:
+    - "cache"
+    - "tmp"
+    - "logs"
+    - "administrator/cache"
+
+- name: Unarchive artifact on remote server
+  unarchive:
+    src: "{{ workspace | default('') }}/{{ artifact_filename }}"
+    dest: "{{ doc_root }}"
+    copy: yes
+    owner: "{{ server_runs_as }}"
+    group: "{{ server_runs_as_group }}"
+
+# - name: Check directory contents
+#   shell: cd {{ doc_root }} && ls -lha
+#   register: command_output
+#   ignore_errors: yes
+
+# - name: Copy Joomla's .htaccess file
+#   copy:
+#     src: "{{ doc_root }}/.htaccess_{{ htaccess_file_suffix }}"
+#     dest: "{{ doc_root }}/.htaccess"
+#     owner: "{{ server_runs_as }}"
+#     group: "{{ server_runs_as_group }}"
+#     force: yes
+#     ignore_errors: yes
+
+# - name: Copy Joomlatools pages config file
+#   copy:
+#     src: "{{ doc_root }}/joomlatools-pages/config_{{ joomlatools_pages_config_file_suffix }}.php"
+#     dest: "{{ doc_root }}/joomlatools-pages/config.php"
+#     owner: "{{ server_runs_as }}"
+#     group: "{{ server_runs_as_group }}"
+#     force: yes
+#     ignore_errors: yes
+
+#~ - name: Create all wget cronjobs
+  #~ become: false
+  #~ tags: cron
+  #~ cron:
+    #~ name: "{{item.name}}"
+    #~ minute: "{{item.minute}}"
+    #~ hour: "{{item.hour}}"
+    #~ job: "/usr/bin/wget --no-check-certificate -qO- '{{item.url}}' &> /dev/null"
+  #~ with_items: "{{ cron_list }}"
+
+#~ - name: remindersCron
+  #~ cron:
+    #~ name: "{{ deploy_env_domain }} reminders cron"
+    #~ hour: "*/12"
+    #~ job: "/usr/bin/wget --no-check-certificate -qO- 'https://{{ deploy_env_domain }}/index.php?option=com_jlike&task=remindersCron&tmpl=component' &> /dev/null"
